@@ -2,6 +2,13 @@
  <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Tailwind CSS (already added) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS CSS & JS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <meta charset="UTF-8" />
@@ -60,6 +67,14 @@
 
   </head>
   <body class="bg-gray-50">
+
+    <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
     <!-- Top Contact Bar -->
     <!-- <div class="bg-gray-100 py-2 px-4 text-sm text-gray-700">
       <div class="container mx-auto flex justify-between items-center">
@@ -216,7 +231,7 @@
 <!-- 🌟 Hero Section -->
 <section class="bg-gradient-to-r from-gray-100 to-white py-20">
   <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-10">
-    <div class="md:w-1/2 text-center md:text-left space-y-6">
+    <div class="md:w-1/2 text-center md:text-left space-y-6" data-aos="fade-right">
       <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
         Executive Search & Leadership Hiring
       </h1>
@@ -227,14 +242,14 @@
         Speak with a Consultant
       </a>
     </div>
-    <div class="md:w-1/2">
+    <div class="md:w-1/2" data-aos="fade-left">
       <img src="from hero.png" alt="Executive Consultancy" class="w-full max-w-md mx-auto">
     </div>
   </div>
 </section>
 
 <!-- 📘 About Executive Search -->
-<section class="py-16 bg-white">
+<section class="py-16 bg-white" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">Trusted Partner in Executive Hiring</h2>
     <p class="max-w-3xl mx-auto text-gray-700">
@@ -246,19 +261,19 @@
 <!-- 🧩 Our Services -->
 <section class="py-16 bg-gray-50">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Executive Hiring Services</h2>
+    <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">Our Executive Hiring Services</h2>
     <div class="grid md:grid-cols-3 gap-8 text-left">
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
         <i class="ri-briefcase-line text-blue-600 text-3xl mb-4"></i>
         <h3 class="text-xl font-semibold mb-2">CXO-Level Hiring</h3>
         <p>Hire CEOs, CFOs, CTOs, CMOs with deep market insight and leadership track record.</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
         <i class="ri-user-star-line text-blue-600 text-3xl mb-4"></i>
         <h3 class="text-xl font-semibold mb-2">Board & Advisory Roles</h3>
         <p>We recruit board members and advisors with exceptional governance and strategy skills.</p>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="300">
         <i class="ri-organization-chart text-blue-600 text-3xl mb-4"></i>
         <h3 class="text-xl font-semibold mb-2">Functional Heads</h3>
         <p>From HR to Operations and Finance, we place experienced department leaders quickly.</p>
@@ -268,23 +283,23 @@
 </section>
 
 <!-- 🔁 Process -->
-<section class="py-16 bg-white">
+<section class="py-16 bg-white" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold mb-6">Our Search Process</h2>
     <div class="grid md:grid-cols-4 gap-6 text-left text-gray-700">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <h4 class="font-semibold text-blue-600 mb-1">1. Client Briefing</h4>
         <p>Understand organizational needs, goals, and leadership expectations.</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h4 class="font-semibold text-blue-600 mb-1">2. Talent Mapping</h4>
         <p>Research & shortlist best-fit candidates from industry-specific talent pools.</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="300">
         <h4 class="font-semibold text-blue-600 mb-1">3. Confidential Evaluation</h4>
         <p>Discreet outreach, behavioral interviews, and stakeholder alignment.</p>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="400">
         <h4 class="font-semibold text-blue-600 mb-1">4. Final Placement</h4>
         <p>Offer closure, onboarding assistance, and long-term performance follow-up.</p>
       </div>
@@ -293,15 +308,15 @@
 </section>
 
 <!-- 💬 Testimonials -->
-<section class="py-16 bg-gray-50">
+<section class="py-16 bg-gray-50" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold mb-10">What Our Clients Say</h2>
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-lg border shadow-sm">
+      <div class="bg-white p-6 rounded-lg border shadow-sm" data-aos="fade-up" data-aos-delay="100">
         <p class="text-gray-700 mb-4">“DSS helped us onboard a strategic CFO in under 20 days. Excellent discretion & process.”</p>
         <h4 class="font-semibold text-blue-700">– Director, FinTech Firm</h4>
       </div>
-      <div class="bg-white p-6 rounded-lg border shadow-sm">
+      <div class="bg-white p-6 rounded-lg border shadow-sm" data-aos="fade-up" data-aos-delay="200">
         <p class="text-gray-700 mb-4">“Their leadership sourcing helped us scale our new vertical in less than 3 months.”</p>
         <h4 class="font-semibold text-blue-700">– HR Head, Retail Chain</h4>
       </div>
@@ -310,7 +325,7 @@
 </section>
 
 <!-- 📞 Contact CTA -->
-<section class="py-16 bg-blue-600 text-white text-center" id="contact">
+<section class="py-16 bg-blue-600 text-white text-center" id="contact" data-aos="fade-up">
   <div class="container mx-auto px-6 space-y-4">
     <h2 class="text-3xl font-bold">Looking to Hire Top Leadership Talent?</h2>
     <p>Let's discuss how DSS can help you find and onboard the right leaders.</p>
@@ -319,112 +334,78 @@
     </a>
   </div>
 </section>
- 
- 
- 
- 
- 
- 
- 
- <!-- Contact Section -->
-    <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
-            <p class="text-gray-600 mb-8">
-              Whether you're an employer looking for the right talent or a
-              jobseeker looking for the right opportunity, Fast Manpower
-              Solutions is your trusted partner.
-            </p>
 
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div
-                  class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <div class="w-5 h-5 flex items-center justify-center">
-                    <i class="ri-map-pin-line text-primary"></i>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
-                  <p class="text-gray-600">
-                    404, 4th Floor, Milinda Manor, Regal Circle, Indore
-                  </p>
-                </div>
-              </div>
+<!-- 📬 Contact Section -->
+<section class="py-20 bg-gray-50" data-aos="fade-up">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+        <p class="text-gray-600 mb-8">
+          Whether you're an employer looking for the right talent or a
+          jobseeker looking for the right opportunity, Fast Manpower
+          Solutions is your trusted partner.
+        </p>
 
-              <div class="flex items-start">
-                <div
-                  class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <div class="w-5 h-5 flex items-center justify-center">
-                    <i class="ri-phone-line text-primary"></i>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p class="text-gray-600">
-                    <a href="tel:+919303781155" class="hover:text-primary"
-                      >+91-9303781155</a
-                    >
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div
-                  class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <div class="w-5 h-5 flex items-center justify-center">
-                    <i class="ri-mail-line text-primary"></i>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p class="text-gray-600">
-                    <a
-                      href="mailto:jobs@fastmanpowersolutions.com"
-                      class="hover:text-primary"
-                      >jobs@fastmanpowersolutions.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div
-                  class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0"
-                >
-                  <div class="w-5 h-5 flex items-center justify-center">
-                    <i class="ri-global-line text-primary"></i>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-900 mb-1">Website</h4>
-                  <p class="text-gray-600">
-                    <a
-                      href="https://www.fastmanpowersolutions.com"
-                      target="_blank"
-                      class="hover:text-primary"
-                      >www.fastmanpowersolutions.com</a
-                    >
-                  </p>
-                </div>
-              </div>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+              <i class="ri-map-pin-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+              <p class="text-gray-600">404, 4th Floor, Milinda Manor, Regal Circle, Indore</p>
             </div>
           </div>
 
-          <div class="h-96 rounded-lg overflow-hidden shadow-sm">
-            <div
-              class="w-full h-full"
-              style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
-            ></div>
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+              <i class="ri-phone-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+              <p class="text-gray-600">
+                <a href="tel:+919303781155" class="hover:text-primary">+91-9303781155</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+              <i class="ri-mail-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+              <p class="text-gray-600">
+                <a href="mailto:jobs@fastmanpowersolutions.com" class="hover:text-primary">jobs@fastmanpowersolutions.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+              <i class="ri-global-line text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Website</h4>
+              <p class="text-gray-600">
+                <a href="https://www.fastmanpowersolutions.com" target="_blank" class="hover:text-primary">www.fastmanpowersolutions.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="h-96 rounded-lg overflow-hidden shadow-sm">
+        <div
+          class="w-full h-full"
+          style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-16 pb-8">
